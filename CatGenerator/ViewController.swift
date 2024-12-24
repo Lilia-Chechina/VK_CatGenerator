@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func didTapCatGnerateButton(_ sender: Any) {
-//        textLabel.text = "Hello, world!"
+        textLabel.text = "Котик сгенерирован"
         dowloadCat()
         
     }

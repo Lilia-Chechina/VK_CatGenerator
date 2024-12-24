@@ -16,41 +16,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Генератор котов" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pp-h2-qJJ">
-                                <rect key="frame" x="20" y="79" width="353" height="21"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Генератор котов" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pp-h2-qJJ">
+                                <rect key="frame" x="20" y="71" width="353" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="20"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Koshka_MAI" translatesAutoresizingMaskIntoConstraints="NO" id="v3H-8Q-9Mn">
-                                <rect key="frame" x="20" y="132.33333333333331" width="353" height="129.33333333333331"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="MAI_Koshka" translatesAutoresizingMaskIntoConstraints="NO" id="v3H-8Q-9Mn">
+                                <rect key="frame" x="89" y="139" width="222" height="284"/>
                                 <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="129.33333333333331" id="UCq-TQ-4DV"/>
-                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKc-8V-2eR">
-                                <rect key="frame" x="20" y="289.66666666666669" width="353" height="35"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Барсик" borderStyle="bezel" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="7Wt-nb-vDA">
+                                <rect key="frame" x="20" y="565" width="353" height="66"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Введи имя котика" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="is6-7m-6fU">
+                                <rect key="frame" x="24" y="492" width="258" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="🥺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUk-4w-lss">
+                                <rect key="frame" x="290" y="478" width="61" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKc-8V-2eR">
+                                <rect key="frame" x="16" y="670" width="353" height="85"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Сгенерируй кота"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Сгенерируй кота">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="didTapCatGnerateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GhN-5H-fMk"/>
+                                    <segue destination="l7J-km-Yca" kind="show" id="kLn-yi-L3a"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="v3H-8Q-9Mn" firstAttribute="top" secondItem="4pp-h2-qJJ" secondAttribute="bottom" constant="32.333333333333343" id="5NM-fc-klG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4pp-h2-qJJ" secondAttribute="trailing" constant="20" id="HJO-Ee-kAj"/>
-                            <constraint firstItem="YKc-8V-2eR" firstAttribute="top" secondItem="v3H-8Q-9Mn" secondAttribute="bottom" constant="28" id="Y5D-za-LXb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v3H-8Q-9Mn" secondAttribute="trailing" constant="20" id="c5C-8K-sVR"/>
-                            <constraint firstItem="4pp-h2-qJJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="cXd-ok-aXH"/>
-                            <constraint firstItem="YKc-8V-2eR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="coI-wX-QK8"/>
-                            <constraint firstItem="v3H-8Q-9Mn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="f6y-3M-zNp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YKc-8V-2eR" secondAttribute="trailing" constant="20" id="hKL-ZL-r04"/>
-                            <constraint firstItem="4pp-h2-qJJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mrk-jU-j1r"/>
+                            <constraint firstItem="v3H-8Q-9Mn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="B0O-Hf-Cxu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v3H-8Q-9Mn" secondAttribute="trailing" constant="20" id="F2t-cz-nhP"/>
+                            <constraint firstAttribute="trailing" secondItem="4pp-h2-qJJ" secondAttribute="trailing" constant="20" id="HJO-Ee-kAj"/>
+                            <constraint firstItem="7Wt-nb-vDA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PDF-O2-nrh"/>
+                            <constraint firstItem="YKc-8V-2eR" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0997653" constant="20" id="QrE-z7-skH"/>
+                            <constraint firstItem="YKc-8V-2eR" firstAttribute="top" secondItem="7Wt-nb-vDA" secondAttribute="bottom" constant="-20" id="T18-C8-g4s"/>
+                            <constraint firstItem="is6-7m-6fU" firstAttribute="top" secondItem="v3H-8Q-9Mn" secondAttribute="top" constant="28" id="W0y-Oo-KBr"/>
+                            <constraint firstItem="YKc-8V-2eR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.898219" constant="20" id="Yc8-GR-c9u"/>
+                            <constraint firstItem="4pp-h2-qJJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="cXd-ok-aXH"/>
+                            <constraint firstItem="is6-7m-6fU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="eIm-7r-Rxh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Wt-nb-vDA" secondAttribute="trailing" constant="20" id="esJ-wm-b6d"/>
+                            <constraint firstItem="v3H-8Q-9Mn" firstAttribute="top" secondItem="4pp-h2-qJJ" secondAttribute="top" constant="25" id="f8a-Yv-cwG"/>
+                            <constraint firstItem="4pp-h2-qJJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="mrk-jU-j1r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="is6-7m-6fU" secondAttribute="trailing" constant="111" id="uOa-lL-nqJ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -66,46 +89,47 @@
             <objects>
                 <viewController id="l7J-km-Yca" customClass="ViewController" customModule="CatGenerator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MLd-oc-sf2">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Генератор котов" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byi-Rt-FFQ">
-                                <rect key="frame" x="20" y="79" width="353" height="21"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="0.0" height="20"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Koshka_MAI" translatesAutoresizingMaskIntoConstraints="NO" id="o57-UG-ZP5">
-                                <rect key="frame" x="20" y="132.33333333333331" width="353" height="129.33333333333331"/>
+                                <rect key="frame" x="20" y="88.333333333333329" width="353" height="129.33333333333337"/>
                                 <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="129.33333333333331" id="t0r-yK-mQo"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNF-Xx-2Qe">
-                                <rect key="frame" x="20" y="289.66666666666669" width="353" height="35"/>
+                                <rect key="frame" x="20" y="245.66666666666663" width="353" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Сгенерируй кота"/>
                                 <connections>
                                     <action selector="didTapCatGnerateButton:" destination="l7J-km-Yca" eventType="touchUpInside" id="C9k-hQ-rJa"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Котик сгенерирован" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byi-Rt-FFQ">
+                                <rect key="frame" x="24" y="71" width="353" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="20"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UAd-wM-ES6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="UAd-wM-ES6" firstAttribute="trailing" secondItem="o57-UG-ZP5" secondAttribute="trailing" constant="20" id="FcC-C1-9Zz"/>
-                            <constraint firstItem="Byi-Rt-FFQ" firstAttribute="leading" secondItem="UAd-wM-ES6" secondAttribute="leading" constant="20" id="NAn-8Q-FLe"/>
+                            <constraint firstItem="Byi-Rt-FFQ" firstAttribute="leading" secondItem="MLd-oc-sf2" secondAttribute="leading" constant="24" id="NAn-8Q-FLe"/>
                             <constraint firstItem="o57-UG-ZP5" firstAttribute="top" secondItem="Byi-Rt-FFQ" secondAttribute="bottom" constant="32.333333333333343" id="cIS-H6-5eN"/>
                             <constraint firstItem="o57-UG-ZP5" firstAttribute="leading" secondItem="UAd-wM-ES6" secondAttribute="leading" constant="20" id="d9O-5l-lzu"/>
                             <constraint firstItem="rNF-Xx-2Qe" firstAttribute="leading" secondItem="UAd-wM-ES6" secondAttribute="leading" constant="20" id="drn-63-beI"/>
                             <constraint firstItem="Byi-Rt-FFQ" firstAttribute="top" secondItem="UAd-wM-ES6" secondAttribute="top" constant="20" id="jmz-4B-FHr"/>
                             <constraint firstItem="UAd-wM-ES6" firstAttribute="trailing" secondItem="rNF-Xx-2Qe" secondAttribute="trailing" constant="20" id="m4Q-35-yES"/>
-                            <constraint firstItem="UAd-wM-ES6" firstAttribute="trailing" secondItem="Byi-Rt-FFQ" secondAttribute="trailing" constant="20" id="okg-4F-Tdh"/>
+                            <constraint firstAttribute="trailing" secondItem="Byi-Rt-FFQ" secondAttribute="trailing" constant="16" id="okg-4F-Tdh"/>
                             <constraint firstItem="rNF-Xx-2Qe" firstAttribute="top" secondItem="o57-UG-ZP5" secondAttribute="bottom" constant="28" id="tY4-VP-tUF"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="T6P-Wg-YH5"/>
                     <connections>
                         <outlet property="textLabel" destination="Byi-Rt-FFQ" id="50B-gb-CP1"/>
                     </connections>
@@ -115,10 +139,15 @@
             <point key="canvasLocation" x="958" y="-35"/>
         </scene>
     </scenes>
+    <color key="tintColor" systemColor="systemPinkColor"/>
     <resources>
         <image name="Koshka_MAI" width="291" height="173"/>
+        <image name="MAI_Koshka" width="213.33332824707031" height="284.33334350585938"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
