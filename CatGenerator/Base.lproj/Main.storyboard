@@ -34,6 +34,9 @@
                                 <rect key="frame" x="20" y="289.66666666666669" width="353" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Сгенерируй кота"/>
+                                <connections>
+                                    <action selector="didTapCatGnerateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GhN-5H-fMk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -50,10 +53,66 @@
                             <constraint firstItem="4pp-h2-qJJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mrk-jU-j1r"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textLabel" destination="4pp-h2-qJJ" id="g8u-Iy-yPH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="23.664122137404579" y="-34.507042253521128"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HtQ-Vr-tEb">
+            <objects>
+                <viewController id="l7J-km-Yca" customClass="ViewController" customModule="CatGenerator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MLd-oc-sf2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Генератор котов" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byi-Rt-FFQ">
+                                <rect key="frame" x="20" y="79" width="353" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="20"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Koshka_MAI" translatesAutoresizingMaskIntoConstraints="NO" id="o57-UG-ZP5">
+                                <rect key="frame" x="20" y="132.33333333333331" width="353" height="129.33333333333331"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="129.33333333333331" id="t0r-yK-mQo"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNF-Xx-2Qe">
+                                <rect key="frame" x="20" y="289.66666666666669" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Сгенерируй кота"/>
+                                <connections>
+                                    <action selector="didTapCatGnerateButton:" destination="l7J-km-Yca" eventType="touchUpInside" id="C9k-hQ-rJa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UAd-wM-ES6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UAd-wM-ES6" firstAttribute="trailing" secondItem="o57-UG-ZP5" secondAttribute="trailing" constant="20" id="FcC-C1-9Zz"/>
+                            <constraint firstItem="Byi-Rt-FFQ" firstAttribute="leading" secondItem="UAd-wM-ES6" secondAttribute="leading" constant="20" id="NAn-8Q-FLe"/>
+                            <constraint firstItem="o57-UG-ZP5" firstAttribute="top" secondItem="Byi-Rt-FFQ" secondAttribute="bottom" constant="32.333333333333343" id="cIS-H6-5eN"/>
+                            <constraint firstItem="o57-UG-ZP5" firstAttribute="leading" secondItem="UAd-wM-ES6" secondAttribute="leading" constant="20" id="d9O-5l-lzu"/>
+                            <constraint firstItem="rNF-Xx-2Qe" firstAttribute="leading" secondItem="UAd-wM-ES6" secondAttribute="leading" constant="20" id="drn-63-beI"/>
+                            <constraint firstItem="Byi-Rt-FFQ" firstAttribute="top" secondItem="UAd-wM-ES6" secondAttribute="top" constant="20" id="jmz-4B-FHr"/>
+                            <constraint firstItem="UAd-wM-ES6" firstAttribute="trailing" secondItem="rNF-Xx-2Qe" secondAttribute="trailing" constant="20" id="m4Q-35-yES"/>
+                            <constraint firstItem="UAd-wM-ES6" firstAttribute="trailing" secondItem="Byi-Rt-FFQ" secondAttribute="trailing" constant="20" id="okg-4F-Tdh"/>
+                            <constraint firstItem="rNF-Xx-2Qe" firstAttribute="top" secondItem="o57-UG-ZP5" secondAttribute="bottom" constant="28" id="tY4-VP-tUF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textLabel" destination="Byi-Rt-FFQ" id="50B-gb-CP1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tGz-Uz-Q98" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="958" y="-35"/>
         </scene>
     </scenes>
     <resources>
